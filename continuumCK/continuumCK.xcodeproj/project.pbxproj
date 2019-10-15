@@ -18,6 +18,9 @@
 		342D0933235657330081D0DF /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342D0932235657330081D0DF /* PostDetailTableViewController.swift */; };
 		342D0935235657410081D0DF /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342D0934235657410081D0DF /* AddPostTableViewController.swift */; };
 		342D0938235657EF0081D0DF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342D0937235657EF0081D0DF /* Post.swift */; };
+		342D093B23565C4C0081D0DF /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342D093A23565C4C0081D0DF /* PostController.swift */; };
+		342D093F235662390081D0DF /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342D093E235662390081D0DF /* PostTableViewCell.swift */; };
+		342D09412356712E0081D0DF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342D09402356712E0081D0DF /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		342D0932235657330081D0DF /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
 		342D0934235657410081D0DF /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 		342D0937235657EF0081D0DF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		342D093A23565C4C0081D0DF /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		342D093E235662390081D0DF /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		342D09402356712E0081D0DF /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +75,14 @@
 		342D0914235651150081D0DF /* continuumCK */ = {
 			isa = PBXGroup;
 			children = (
+				342D091B235651150081D0DF /* Main.storyboard */,
+				342D0929235651E00081D0DF /* continuumCK.entitlements */,
+				342D093C235661B00081D0DF /* views */,
 				342D0936235657DF0081D0DF /* model */,
 				342D092E2356566F0081D0DF /* controllers */,
-				342D0929235651E00081D0DF /* continuumCK.entitlements */,
 				342D0919235651150081D0DF /* ViewController.swift */,
-				342D091B235651150081D0DF /* Main.storyboard */,
 				342D092D235652330081D0DF /* resources */,
+				342D09402356712E0081D0DF /* DateExtension.swift */,
 			);
 			path = continuumCK;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 		342D092E2356566F0081D0DF /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				342D093923565C240081D0DF /* model controller */,
 				342D092F235656790081D0DF /* view controllers */,
 			);
 			path = controllers;
@@ -123,6 +132,22 @@
 				342D0937235657EF0081D0DF /* Post.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		342D093923565C240081D0DF /* model controller */ = {
+			isa = PBXGroup;
+			children = (
+				342D093A23565C4C0081D0DF /* PostController.swift */,
+			);
+			path = "model controller";
+			sourceTree = "<group>";
+		};
+		342D093C235661B00081D0DF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				342D093E235662390081D0DF /* PostTableViewCell.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +222,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				342D0933235657330081D0DF /* PostDetailTableViewController.swift in Sources */,
+				342D09412356712E0081D0DF /* DateExtension.swift in Sources */,
+				342D093B23565C4C0081D0DF /* PostController.swift in Sources */,
 				342D091A235651150081D0DF /* ViewController.swift in Sources */,
 				342D0916235651150081D0DF /* AppDelegate.swift in Sources */,
 				342D0918235651150081D0DF /* SceneDelegate.swift in Sources */,
 				342D0935235657410081D0DF /* AddPostTableViewController.swift in Sources */,
 				342D0938235657EF0081D0DF /* Post.swift in Sources */,
 				342D09312356570D0081D0DF /* PostListTableViewController.swift in Sources */,
+				342D093F235662390081D0DF /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
